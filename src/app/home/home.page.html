@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title class="centered-title">Trabajo LocalStorage</ion-title>
+  </ion-toolbar>
+</ion-header>
+<div style="background-image: url(https://media.tenor.com/UhX-MlDClXAAAAAC/pato-bailando.gif);">
+
+  <div class="centered-container">
+    <div>
+      <ion-input placeholder="Ingrese el texto" [(ngModel)]="receivetext" class="btn-neon-red"></ion-input>
+      <button (click)="print()" class="btn-neon">Enviar</button>
+    </div>
+    
+  </div>
+
+  <div >
+    <h1 class="h1" >{{ recovertext }}</h1>
+  </div>
+
+</div>
+<style>
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-label {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.centered-title {
+  text-align: center;
+}
+</style>
